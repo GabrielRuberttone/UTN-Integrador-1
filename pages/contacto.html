@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teclados Gamers</title>
+    <link rel="stylesheet" href="/style/contactoStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-teclados-gamer.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+      <header class="header color2">
+        <div class="header-superior">
+          <div class="isologo">
+            <h1 class="isologo-nombre">TECLADOS GAMER</h1>
+            <img
+              src="/images/logo-teclados-gamer.png"
+              alt="teclados gamer logo"
+              class="isologo-image"
+            />
+          </div>
+          <div class="busqueda">
+            <form action="#">
+              <input
+                class="buscador" type="search" placeholder="Buscador" name="buscador"
+              />
+            </form>
+            <div class="buscador-icon">
+              <img src="/images/icons/busquedaIcon.png" alt="" />
+            </div>
+          </div>
+
+          <div class="mi-cuenta">
+            <div class="mi-cuenta-texto">
+              <h3>Mi cuenta</h3>
+            </div>
+
+            <div class="mi-cuenta-cart"> <img src="/images/icons/cart-shopping-solid.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div >
+          <nav class="header-inferior">
+              <a href="/index.html">INICIO</a>
+              <a href="./ofertas.html">OFERTAS</a>
+              <!-- <a href="./pages/ayuda.html">AYUDA</a></li> -->
+              <a href="./productos.html">PRODUCTOS</a>
+          </nav>
+        </div>
+      </header>
+
+      <Section class="section-contacto">
+        <H2 class="titulo-contacto">Contactate con Teclados Gamer acá</H2>
+
+        <form class="formulario" action="">
+    
+            <label for="nombre">Nombre</label>
+            <br>
+            <input id="nombre" type="text" name="nombre" autofocus required />
+            <br />
+            <label for="apellido">Apellido</label>
+            <br>
+            <input type="text" id="apellido" name="apellido" required />
+            <br />
+            <label for="email">E-mail</label>
+            <br>
+            <input type="text" id="email" name="email" required />
+            <br />
+
+            <br />
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="55%"
+              rows="10" placeholder="Ingresa un texto..."
+            ></textarea>
+            <br />
+            <label for="opcion">Elegi una opcion</label>
+            <select name="opcion" id="opcion">
+              <option value="1">Formas de pago</option>
+              <option value="2">Envios</option>
+              <option value="3">Ofertas</option>
+              <option value="4">Productos</option>
+            </select>
+           
+          <br>
+            <input type="reset" value="borrar todo lo escrito" />
+            <input type="submit" value="Enviar todo lo ingresado" />
+
+        </form>
+        <br>
+
+      </Section>
+    
+
+        <footer class="flex-footer color2">
+
+            <div class="footer1">
+                <div class="texto-footer">
+                    <h3>Varias formas de pago</h3>
+                    <p>Podés pagar con tarjeta, débito, y efectivo.</p>
+                </div>
+                <div class="icono-footer"><img src="/images/icons/credit-card-solid.svg" alt=""></div>
+            </div>
+
+
+
+            <div class="footer3">
+                <div class="texto-footer">
+                   <h3>Seguridad en las compras</h3>
+                  <p>Si recibis algo y no te gusta...¡Devolvelo!.</p>
+                </div>
+
+                <div class="icono-footer"><img src="/images/icons/shield-halved-solid.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="footer2">
+                <div class="texto-footer">
+                    <h3>Envío a todo el pais</h3>
+                    <p>Tenés envíos gratis desde todas las localidades.</p>
+                </div>
+
+                <div class="icono-footer"><img src="/images/icons/truck-fast-solid.svg" alt="">
+                </div>
+
+            </div>
+
+
+        </footer>
+    </div>
+  </body>
+</html>
