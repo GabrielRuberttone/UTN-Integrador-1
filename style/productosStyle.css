@@ -84,6 +84,52 @@ nav a{
     color: black;
 } 
 
+
+/*Catalogo de productos */
+h1{
+    text-align: center;
+    margin: 1%;
+}
+.grid-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5%;
+    margin: .5%;
+    background-color: white;
+   justify-items: center;
+}
+.card-productos{
+border: solid black 1px;
+border-radius: 7px;
+padding: 3%;
+background-color: #FEF9A7
+;
+}
+
+.container-imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.card-productos h2{
+    color: #D61C4E;
+    text-align: center;
+
+}
+.container-button{
+    display: flex;
+    justify-content: center;
+}
+.button-style{
+    width: 50%;
+    color:white;
+    background-color: #D61C4E;
+    border-radius:5px;
+    font-size: 105%; 
+    margin: 3%;
+   }
+
+/*footer */
 .icono-footer{
     width: 15%;
 }
