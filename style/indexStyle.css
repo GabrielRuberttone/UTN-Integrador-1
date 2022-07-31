@@ -8,8 +8,7 @@ body {
 .color1{
 background-color:#D61C4E;
 }
-.color2
-{
+.color2{
 background-color:#F77E21 ;
 }
 .color3{
@@ -17,13 +16,12 @@ background-color: #FAC213;
 }
 .color4{
     background-color: #FEF9A7;
-
 }
+
 .header-superior{
     display:flex;
     flex-wrap: wrap;
     justify-content:space-between;
-     
 }
 
 .isologo{
@@ -56,8 +54,8 @@ background-color: #FAC213;
     height: 2.5vh;
     border-radius: 4px;
     margin: 1vh;
-
 }
+
 
 .mi-cuenta{
     display: flex;
@@ -81,21 +79,22 @@ background-color: #FAC213;
 
 nav a{
     text-decoration: none;
-    color: black;
+    color:black;
 } 
 
 .section-slider{
     width: 110vw;
     height: 25vh;
     background-image: url(/images/slide1.png);
-    background-position: 10%;
+    background-position: center;
+
     display: flex;
 }
 .slider-texto{
     color: white;
     align-self: flex-end;
-    padding: 5%;
-    font-size: 1vh;
+    padding: 2%;
+    font-size: large;
 
 }
 
@@ -107,18 +106,19 @@ grid-template-columns: 50vw repeat(2, 1fr);
 grid-template-rows: repeat(2, 1fr);
 align-items: center;
 align-content: center;
-
 }
 
 .main1{
-    width: 100%;
-    grid-area: main1;
+    /* width: 100vw; */
+    /* grid-area: main1; */
     grid-column:1/2;
     grid-row: 1/3;
-    background-color: #D61C4E;
     color: white;
-    align-self: center;
-     ;
+    background-color: #D61C4E;
+    /* align-self: center; */
+    padding: 4%;
+
+   
 
 }
 .destacada{
@@ -180,16 +180,232 @@ margin: 1%;
 }
 
 /*Footer */
+
+
 .icono-footer{
     width: 15%;
 }
 .flex-footer{
     display: flex;
     justify-content: space-around;
-
 }
 .texto-footer{
 font-size: large;
 }
 
+/* Media queries */
+@media only screen and (max-width: 768px)  {
+  /* Header */
+    .buscador{
+        width: 85vw; 
+        height: 2.5vh;
+        border-radius: 4px;
+        margin: 1vh;
+    
+    }
+    .nav-border{
+        border-bottom: #F77E21 solid;
+    }
+    
+    .mi-cuenta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+        width: 80vw;
+        margin: 4%;
+    }
 
+/* Slider */
+    .slider-texto{
+        font-size: large;
+    }
+    /*contenedor princial */ 
+
+    .grid-main{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: repeat(4, 1fr);
+        align-items: center;
+        align-content: center;
+        
+        }
+        .main1{
+            /* width: 100%; */
+            /* grid-area: main1; */
+            grid-column:1/3;
+            /* grid-row: 1/3; */
+            background-color: #D61C4E;
+            color: white;
+            align-self: center;
+            padding: 4%;
+        }
+
+        .main2{
+            grid-column:1/2;
+            grid-row: auto;
+            align-self: center;
+            border: #FEF9A7 solid 2px;
+            padding: 4%;
+
+        }
+        .main3{
+            grid-column: 2/3;
+            grid-row: auto;
+            border: #FEF9A7 solid 2px;
+            align-self: center;
+            padding: 4%;
+
+        
+            
+        }
+        .main4{
+            grid-column:1/2;
+            grid-row: auto;
+            border: #FEF9A7 solid 2px;
+            align-self: flex-start;
+            padding: 4%;
+
+        
+        }
+        .main5{
+        
+            grid-column:2/3;
+            grid-row: auto;
+            border: #FEF9A7 solid 2px;
+            align-self: flex-start;
+            padding: 4%;
+
+        }
+    /* aside  */
+
+  
+    .aside-newsletter{
+        padding: 1.5%;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        justify-content:center ;
+        
+    }
+    
+    .newsletter-parrafo{
+    margin: 1%;
+    }
+    .caja-email{
+        width: 60vw; 
+        height: 1.5vh;
+        border-radius: 4px;
+        margin: 1vh;
+        }
+
+
+    
+    /*footer */
+    .footer-flex{
+        border-left: #FAC213 solid 4px;
+        padding: 4%;
+
+   }
+}
+@media only screen and (max-width: 577px) {
+   
+    .header-superior{
+        flex-direction: column;
+    }
+    .header-inferior{
+        /* display: flex;
+        justify-content: space-around; lo puedo usar para las queries del cel */
+        flex-direction: column;
+        align-items: center;
+        font-size: x-large;
+        font-weight: bold;
+        padding: 10px;
+        background-color: #FAC213;
+        border: solid black 1px;
+    }
+
+/*Header */
+
+.grid-main{
+    height: 100%;
+    display: grid none;
+    display: flex;
+    grid-template-columns:none;
+    grid-template-rows: none;
+    align-content: center none;
+    flex-direction: column;    
+    align-items: center;
+    padding: 4%;
+
+    }
+
+
+    .main1{
+        width: 90vw;
+        grid-column:none;
+        background-color: #FAC213;        
+        align-self: center;
+        color: black;
+
+    }
+
+    .main2{
+        grid-column:none;
+        grid-row: none/3;
+        /* padding: 1%; */
+        align-self: center;
+        border: none;
+        border: top solid #FEF9A7 ;
+    }
+    .main3{
+        grid-column: none;
+        grid-row: none/4;
+        align-self: center;
+        border: none;
+
+    
+        
+    }
+    .main4{
+        grid-column:none;
+        border: none;
+
+        grid-row: none;
+        align-self: flex-start;
+    
+    
+    }
+    .main5{
+    
+        grid-column:none;
+        grid-row: none;
+        align-self: flex-start;
+        border: none;
+
+    }
+
+    .newsletter-parrafo{
+        margin: 2%;
+        }
+    /*footer */
+    .footer-flex{
+        border-left: none;
+         border-bottom: #FAC213 solid 4px;
+    }
+.flex-footer{
+flex-direction: column;
+align-items: center;
+}
+
+.icono-footer{
+    width: 15%;
+    margin: 10px;
+}
+
+.texto-footer{
+font-size: large;
+/* text-align: center; */
+}
+}

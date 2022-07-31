@@ -113,3 +113,78 @@ font-size: large;
 margin-bottom: 2%;
 }
 
+/* Media queries */
+@media only screen and (max-width: 768px)  {
+    /* Header */
+      .buscador{
+          width: 85vw; 
+          height: 2.5vh;
+          border-radius: 4px;
+          margin: 1vh;
+      
+      }
+      .nav-border{
+          border-bottom: #F77E21 solid;
+      }
+      .mi-cuenta{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: large;
+          width: 80vw;
+          margin: 4%;
+      }
+
+      /*ofertas  */
+      .ofertas-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: x-large;
+        padding: 1%;
+        background-color: #FEF9A7;
+        padding: 5%;
+    }
+  
+      /*footer */
+      .footer-flex{
+          border-left: #FAC213 solid 4px;
+     }
+  }
+  @media only screen and (max-width: 577px) {
+      .header-superior{
+          flex-direction: column;
+      }
+      .header-inferior{
+          /* display: flex;
+          justify-content: space-around; lo puedo usar para las queries del cel */
+          flex-direction: column;
+          align-items: center;
+          font-size: x-large;
+          font-weight: bold;
+          padding: 10px;
+          background-color: #FAC213;
+          border: solid black 1px;
+      }
+  
+      /*footer */
+      .footer-flex{
+          border-left: none;
+           border-bottom: #FAC213 solid 4px;
+      }
+  .flex-footer{
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .icono-footer{
+      width: 15%;
+      margin: 10px;
+  }
+  
+  .texto-footer{
+  font-size: large;
+  /* text-align: center; */
+  }
+  }
+  
